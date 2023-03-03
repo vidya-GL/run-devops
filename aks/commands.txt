@@ -33,9 +33,14 @@ az login
 --
 Create a resource group
 az group create --name myResourceGroup --location westeurope
+
+
+az group create --name myResourceGroup --location South India
+
 --
 Create an Azure Container Registry
 az acr create --resource-group myResourceGroup --name shoppingacr --sku Basic
+az acr create --resource-group myResourceGroup --name shoppingvbacr --sku Basic
 --
 Enable Admin Account for ACR Pull
 az acr update -n shoppingacr --admin-enabled true
